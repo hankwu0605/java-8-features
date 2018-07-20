@@ -1,6 +1,8 @@
 package streamApi.basic;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
 import functionalInterface.builtIn.User;
 
 public class BasicPractice2 {
@@ -9,15 +11,15 @@ public class BasicPractice2 {
 
     List<User> users = User.createList();
 
-    // ¦L¥X©Ò¦³¤H©Ò¦³¸ê°T
+    // å°å‡ºæ‰€æœ‰äººæ‰€æœ‰è³‡è¨Š
 
-    // ¦L¥X©Ò¦³¤Hªº¦~ÄÖ
+    // å°å‡ºæ‰€æœ‰äººçš„å¹´é½¡
 
-    // »`¶°©Ò¦³¤HªºID¨Ã¦s¦¨List
+    // è’é›†æ‰€æœ‰äººçš„IDä¸¦å­˜æˆList
 
-    // »`¶°©Ò¦³¦~ÄÖ>=18ªº¤H¨Ã¦s¦¨List
-
-    // »`¶°©Ò¦³¦~ÄÖ>=18ªº¤Hªºid¨Ã¦s¦¨List
+    // è’é›†æ‰€æœ‰å¹´é½¡>=18çš„äººä¸¦å­˜æˆList
+    
+    // è’é›†æ‰€æœ‰å¹´é½¡>=18çš„äººçš„idä¸¦å­˜æˆList
 
   }
 }
