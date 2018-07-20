@@ -16,6 +16,8 @@ public class BasicPractice {
     // for (User u : User.createList()) {
     // printUsers.accept(u);
     // }
+    System.out.println("================consumerPractice================");
+    new User().createList().stream().forEach(u->u.printUser());
   }
 
   public static void functionPractice() {
@@ -23,6 +25,8 @@ public class BasicPractice {
     // for (User u : User.createList()) {
     // System.out.println(getName.apply(u));
     // }
+    System.out.println("================functionPractice================");
+    new User().createList().stream().forEach(u->System.out.println(u.getName()));
   }
 
   public static void predicatePractice() {
@@ -31,11 +35,14 @@ public class BasicPractice {
     // if (adult.test(u))
     // System.out.println(u);
     // }
+    System.out.println("================predicatePractice================");
+    new User().createList().stream().filter(u->u.getAge()>=18).forEach(u->System.out.println(u));
   }
 
   public static void supplierPractice() {
     List<User> users = User.createList();
     List<String> ids = null;
+    System.out.println("================supplierPractice================");
     ids.stream().forEach(i -> System.out.println(i));
   }
 
